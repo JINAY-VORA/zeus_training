@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <title>My first web page</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+    <style>
+        .main-heading{
+            background: maroon;
+            color: white;
+            border-bottom: 10px solid crimson;
+            letter-spacing: 10;
+            text-align: center;
+            padding: 5px auto;
+        }
+        .bg-green{
+            background-color: green;
+            padding: 2px 0;
+        }
+        .bold{
+            font-weight: bold;
+            text-transform: uppercase;          
+        }
+        .italic{
+          font-style: italic;
+        }
+        .sub-heading{
+            color: white;
+            padding-left: 15px;
+        }
+        body{
+          background-color: wheat;
+          font-family: roboto;
+        }
+        .list{
+          color:brown
+        }
+        .logo-google{
+          background-color: white;
+          border: 1px dashed  slategrey;
+          width: 200px;
+          padding: 0 70px 0 20px;
+        }
+        .table{
+          background-color: silver;
+          border: 1px solid;
+        }
+        td{
+        
+         border: 1px solid;
+         
+        }
+        .small-heading{
+          color:gray
+        }
+        .link{
+          text-decoration: none;
+        }
+    </style>
+    <body>
+      <h1 class="main-heading italic">My first web page</h1>
+      <h2 class="bg-green sub-heading">What this is</h2>
+      <p>
+        Welcome to my first web page.I created this webpage without the
+        assistance of a web page editor. Just my little editor and a keen<span class="bold italic">
+        understanding of html</span>.</p>
+      </p>
+      <h2 class="bg-green sub-heading">Why this is</h2>
+      <ul class="list italic">
+        <li>To learn HTML</li>
+        <li>List element
+            <br>
+            <ol>
+                <li>Home</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ol>
+        </li>
+        <li>Here I have created ordered and unordered list</li>
+      </ul>
+      <h2 class="bg-green sub-heading">ZeusLearning.com</h2>
+      <a href="https://zeuslearning.com" target="_blank" class="link">
+        <p>This link will open zeuslearning.com in new tab</p>
+      </a>
+      <h2 class="bg-green sub-heading">On click of the following image navigate to Google.com</h2>
+      <a href="https://google.com">
+        <img src="google.jpg" alt="google logo" width="100px" class="logo-google">
+      </a>
+      <h3 class="small-heading">Some random table</h3>
+      <table border="1 solid" class="table">
+        <tr>
+            <td>Row 1,cell 1</td>
+            <td>Row 1,cell 2</td>
+            <td>Row 1,cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2,cell 1</td>
+            <td>Row 2,cell 2</td>
+            <td>Row 2,cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3,cell 1</td>
+            <td>Row 3,cell 2</td>
+            <td>Row 3,cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 4,cell 1</td>
+            <td>Row 4,cell 2</td>
+            <td>Row 4,cell 3</td>
+        </tr>
+      </table>
+      <h3 class="small-heading">Some random form</h3>
+      <p><span class="bold italic">
+        Note:</span> It looks the part,but wont do anything.</p>
+      <form action="">
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" placeholder="Your name">
+        <br>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your comments"></textarea><br>
+        <p>Are you:</p>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <br>
+        <br>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <input type="submit" value="Submit Query">
+      </form>
+    </body>
+  </head>
+</html>
