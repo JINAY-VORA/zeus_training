@@ -114,7 +114,7 @@
       <h3 class="small-heading">Some random form</h3>
       <p><span class="bold italic">
         Note:</span> It looks the part,but wont do anything.</p>
-      <form action="">
+      <form name="mainForm" onsubmit="validateForm()" required>
         <label for="name">Name:</label>
         <br>
         <input type="text" name="name" placeholder="Your name">
@@ -133,6 +133,36 @@
         <br>
         <input type="submit" value="Submit Query">
       </form>
+      <script>
+        function validateForm(){
+          var x=document.forms["mainForm"]["name"].value;
+          var y=document.forms["mainForm"]["comments"].value;
+          var z=0;
+          const radioBtns=document.querySelectorAll('input[name="gender"]');
+          for(const radioBtn of radioBtns){
+            if(radioBtn.checked){
+              z=1;
+              break;
+          }
+        }
+          if(x==""||y==""||z==0){
+            alert("All fields are compulsory");
+            if(x==""){
+              x.focus();
+            }
+            if(y==""){
+              y.focus();
+            }
+            if(z==0){
+              z.focus();
+            }
+           
+            return false;
+          }
+          return false;
+          
+        }
+      </script>
     </body>
   </head>
 </html>
