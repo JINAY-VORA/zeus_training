@@ -1,0 +1,20 @@
+*{
+    margin:0;
+
+}
+header{
+    grid-area:h;
+    background-image: url("images/pattern-header-img.png"), url("images/pattern-header-svg.svg");
+    width: 100%;
+    grid-column: 1/-1;
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+header>img{
+
+    align-items: center;
+    width: 134px;
+    height: 35px;
+    padding-left:24px ;
+}

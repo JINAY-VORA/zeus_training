@@ -23,6 +23,15 @@ header{
     grid-column: 1/-1;
     height: 47px;
     border-bottom: 2px solid #31B9E4;
+    display: flex;
+    align-items: center;
+}
+header>img{
+
+    align-items: center;
+    width: 134px;
+    height: 35px;
+    padding-left:24px ;
 }
 body{
     background-color: #eeeeee;
