@@ -1,0 +1,240 @@
+*{
+    margin:0;
+
+}
+.overlay{
+width: 100%;
+background-color: rgba(37,49,63,0.8);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 47.5px  50px 598px  191px  74px;
+    grid-template-areas: "h h h h h h h h h h h h"
+                         ". . . . . . . . . . . ."
+                         ". . . m m m m m m . . ."
+                         ". . . . . . . . . . . ."
+                         "f f f f f f f f f f f f";
+}
+header{
+    grid-area:h;
+    background-image: url("images/pattern-header-img.png"), url("images/pattern-header-svg.svg");
+    width: 100%;
+    grid-column: 1/-1;
+    height: 47px;
+    border-bottom: 2px solid #31B9E4;
+}
+body{
+    background-color: #eeeeee;
+}
+main{
+    grid-column: 3/-1;
+    background-color: white;
+    grid-area:m;
+    height: 594px;
+    width: 488px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 4px solid #3AC7EC;
+
+}
+.form-div{
+    padding: 20px 32px;
+}
+.back-sign{
+    padding-top: 2px;
+}
+.form-header{
+    display: flex;
+}
+.form-heading{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    padding-top: 2px;
+}
+.radio-btns{
+    display: flex;
+    margin-top: 34px;
+}
+.radio-btns>div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.radio-btns>div>p{
+    padding: 2px 0px;
+    color:#333333;
+    font-size: 16px;
+}
+.radio-btns>div:nth-child(1){
+    width:81px;
+}
+.radio-btns>div:nth-child(2){
+    width:176px;
+}
+.radio-btns>div:nth-child(2){
+    margin-left: 32px;
+}
+.radio-btns>div>img{
+    width:20px;
+}
+.dropdown-div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.dropdown-head{
+    font-size: 12px;
+    color: #666666;
+}
+.dropdown-field-state{
+    font-size: 16px;
+    color: #222222;
+}
+.state{
+    margin-top: 23px;
+}
+.district{
+    margin-top: 36px    ;
+}
+.username{
+    margin-top: 56px;
+}
+.field-input{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.field-text{
+    font-size: 16px;
+    color: #666666;
+}
+.password{
+    margin-top: 33px;
+}
+.forgot-text{
+    color: #1F7A54;
+    font-size: 14px;
+    text-align: end;
+}
+.remember-me{
+    display: flex;
+    margin-top: 24px;
+    width: 134px;
+    align-items: center;
+    font-size: 16px;
+    color: #222222;
+    justify-content: space-between;
+}
+.remember-me>img{
+    width: 22px;
+    height: 24px;
+}
+.login-btn{
+    display: flex;
+    margin-top: 34px;
+    justify-content: center;
+}
+.login-btn>button{
+    width: 216px;
+    height: 40px;
+    background: #3FD28B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 5px #0000003D;
+    opacity: 1;
+    border:none;
+    color: #1F2834;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+footer{
+    grid-area:f;
+}
+.footer-links{
+    display: flex;
+    width: 130px;
+    height: 18px;
+    margin:0 auto;
+    justify-content: space-between;
+}
+.footer-links>a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #1F7A54;
+}
+.footer-links>a:nth-child(1){
+    border-right: 1px solid #0000001F;
+    padding-right: 6px;
+}
+.footer-logo{
+    width:90px;
+    height: 24px;
+    padding-right: 16px;
+    border-right: 1px solid #0000001F;
+}
+.subfooter{
+    display: flex;
+    background-color: #E0E1E1;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+}
+.subfooter-text{
+    width: 385px;
+    display: flex;
+    padding-left: 16px;
+    color: #616161;
+}
+.subfooter-text>p{
+    font-size: 12px;
+}
+.subfooter-text>p:nth-child(2){
+    padding-left: 8px;
+}
+.subfooter-text>p:nth-child(3){
+    padding-left: 11px;
+}
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+.bold{
+    font-family: B-Quicksand;
+}
+.medium{
+    font-family: M-Quicksand;
+}
+.normal{
+    font-family: R-Quicksand;
+}
+.light{
+    font-family: L-Quicksand;
+}
+.semi-bold{
+    font-family: S-Quicksand;
+}
+@font-face {
+    font-family:M-Quicksand;
+    src: url(fonts/Quicksand-Medium.ttf);
+}
+@font-face {
+    font-family: B-Quicksand;
+    src: url(fonts/Quicksand-Bold.ttf);
+}
+@font-face {
+    font-family:L-Quicksand;
+    src: url(fonts/Quicksand-Light.ttf);
+}
+@font-face {
+    font-family:R-Quicksand;
+    src: url(fonts/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family:S-Quicksand;
+    src: url(fonts/Quicksand-SemiBold.ttf);
+}
