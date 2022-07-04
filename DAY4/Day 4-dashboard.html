@@ -1,20 +1,241 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,intial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style-dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </html>
-<style>
-    main{
-
-    }
-</style>
 <body>
-    <header>
-        <img src="images/logo-header.svg" alt="Company's logo">
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+        <header>
+            <img src="images/logo-header.svg" alt="Company's logo" class="header-logo">
+            <div class="nav-bar" >
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#">Content</a>
+                    <a href="#">Users</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Admin</a>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <img src="images/hamburger-menu.svg" alt="menu icon" class="hamburger-menu">
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="nav-icons">
+                    <img src="images/alerts.svg" alt="bell icon">
+                    <span class="badge">2</span>
+                </a>
+                <a href="#" class="nav-icons">
+                    <img src="images/announcements.svg" alt="speaker icon">
+                    <span class="badge">1</span>
+                </a>
+                <a href="#" class="nav-icons">
+                    <img src="images/profile.png" alt="Profile picture" class="profile">
+                    <span class="badge-white">T</span>
+                </a>                
+                </div>
+            </div>
+        </header>
+        <main>  
+            <div class="course-grid">
+                <div class="flex-header">
+                    <div>
+                        <img src="images/courses.svg" alt="Courses icon" class="courses-icon">
+                        <h2>4</h2>
+                        <p class="semi-bold">Courses</p>
+                    </div>
+                    <div>
+                        <img src="images/classes.svg" alt="Classes icon" class="classes-icon">
+                        <h2>4</h2>
+                        <p class="semi-bold">Classes</p>
+                    </div>
+                </div>
+                <div class="flex-sort">
+                    <div class="left-sort">
+                        <p class="semi-bold">Showing 4 of 4 courses</p>
+                    </div>
+                    <div class="right-sort">
+                        <div class="right-sort-items">
+                            <p class="semi-bold">Sort By:</p>
+                            <div>
+                                <p class="bold">Course Name:</p>
+                                <img src="images/arrow-down.svg" alt="down arrow icon">
+                            </div>
+                            <img src="images/sort.svg" alt="sort icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="courses-tab course1">
+                        <div class="course-specs">
+                            <div class="course-img">
+                                <img src="images/imageMask.png" alt="course image 1">
+                            </div>
+                            <div class="course-text">
+                                <div class="course-head">
+                                    <p class="bold">Acceleration</p>
+                                </div>
+                                <div class="course-sub">
+                                    <p class="medium grey">Physics</p>
+                                    <p class="medium grey">Grade 7 <span class="bold">+2</span></p>
+                                </div>
+                                <div class="course-time">
+                                    <p class="medium grey"><b>4</b>&nbsp;Units&nbsp;<b>18</b>&nbsp;Lessons&nbsp;<b>24</b>&nbsp;Topics</p>
+                                </div>
+                                <div class="course-class">
+                                    <p class="bold">Mr. Frank's Class B</p>
+                                    <img src="images/arrow-down.svg" alt="Down arrow icon">
+                                </div>
+                                <div class="course-date ">
+                                    <p class="medium grey">50 Students</p>
+                                    <p class="semi-bold grey">21-Jan-2020 - 21-Aug-2020</p>    
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/favourite.svg" alt="favourite icon">
+                            </div>
+                        </div>
+                        <div class="course-tools">
+                            <img src="images/preview.svg" alt="preview icon">
+                            <img src="images/manage course.svg" alt="manage course icon">
+                            <img src="images/grade submissions.svg" alt="grade submissions button">
+                            <img src="images/reports.svg" alt="reports button">
+                        </div>
+                    </div>
+                    <div class="courses-tab course2">
+                        <div class="course-specs">
+                            <div class="course-img">
+                                <img src="images/imageMask-1.png" alt="course image 1">
+                            </div>
+                            <div class="course-text">
+                                <div class="course-head">
+                                    <p class="bold">Displacement, Velocity and Speed</p>
+                                </div>
+                                <div class="course-sub">
+                                    <p class="medium grey">Physics 2</p>
+                                    <p class="medium grey">Grade 6 <span class="bold">+3</span></p>
+                                </div>
+                                <div class="course-time">
+                                    <p class="medium grey"><b>2</b>&nbsp;Units&nbsp;<b>15</b>&nbsp;Lessons&nbsp;<b>20</b>&nbsp;Topics</p>
+                                </div>
+                                <div class="course-class">
+                                    <p class="bold opacity">No Classes</p>
+                                    <img src="images/arrow-down.svg" alt="Down arrow icon">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/favourite.svg" alt="favourite icon">
+                            </div>
+                        </div>
+                        <div class="course-tools">
+                            <img src="images/preview.svg" alt="preview icon">
+                            <img src="images/manage course.svg" alt="manage course icon">
+                            <img src="images/grade submissions.svg" alt="grade submissions button">
+                            <img src="images/reports.svg" alt="reports button">
+                        </div>
+                    </div>
+                    <div class="courses-tab course3">
+                        <div class="course-specs">
+                            <div class="course-img">
+                                <img src="images/imageMask-3.png" alt="course image 1">
+                            </div>
+                            <div class="course-text">
+                                <div class="course-head">
+                                    <p class="bold">Introduction to Biology:Micro organims and how they affec...</p>
+                                </div>
+                                <div class="course-sub">
+                                    <p class="medium grey">Biology</p>
+                                    <p class="medium grey">Grade 4 <span class="bold">+1</span></p>
+                                </div>
+                                <div class="course-time">
+                                    <p class="medium grey"><b>5</b>&nbsp;Units&nbsp;<b>16</b>&nbsp;Lessons&nbsp;<b>22</b>&nbsp;Topics</p>
+                                </div>
+                                <div class="course-class">
+                                    <p class="bold">All Classes</p>
+                                    <img src="images/arrow-down.svg" alt="Down arrow icon">
+                                </div>
+                                <div class="course-date ">
+                                    <p class="medium grey">300 Students</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/favourite.svg" alt="favourite icon">
+                            </div>
+                        </div>
+                        <div class="course-tools">
+                            <img src="images/preview.svg" alt="preview icon">
+                            <img src="images/manage course.svg" alt="manage course icon">
+                            <img src="images/grade submissions.svg" alt="grade submissions button">
+                            <img src="images/reports.svg" alt="reports button">
+                        </div>
+                    </div>
+                    <div class="courses-tab course4">
+                        <span class="expired-badge bold uppercase bold">Expired</span>
+                        <div class="course-specs">
+                            <div class="course-img">
+                                <img src="images/imageMask-2.png" alt="course image 1">
+                            </div>
+                            <div class="course-text">
+                                <div class="course-head">
+                                    <p class="bold">Introduction to High School Mathematics</p>
+                                </div>
+                                <div class="course-sub">
+                                    <p class="medium grey">Mathematics</p>
+                                    <p class="medium grey">Grade 8 <span class="bold">+3</span></p>
+                                </div>
+                                <div class="course-time">
+                                    <p class="medium grey"><b>4</b>&nbsp;Units&nbsp;<b>18</b>&nbsp;Lessons&nbsp;<b>24</b>&nbsp;Topics</p>
+                                </div>
+                                <div class="course-class">
+                                    <p class="bold">Mr. Frank's Class A</p>
+                                    <img src="images/arrow-down.svg" alt="Down arrow icon">
+                                </div>
+                                <div class="course-date ">
+                                    <p class="medium grey">44 Students</p>
+                                    <p class="semi-bold grey">19-Oct-2019 - 20-Oct-2020</p>    
+                                </div>
+                            </div>
+                            <div>
+                                <img src="images/favourite.svg" alt="favourite icon">
+                            </div>
+                        </div>
+                        <div class="course-tools">
+                            <img src="images/preview.svg" alt="preview icon">
+                            <img src="images/manage course.svg" alt="manage course icon">
+                            <img src="images/grade submissions.svg" alt="grade submissions button">
+                            <img src="images/reports.svg" alt="reports button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-links semi-bold">
+                <a href="#" class="semi-bold">About</a>
+                <a href="#" class="semi-bold">Contact Us</a>
+            </div>
+            <div class="subfooter">
+                <div class="footer-logo">
+                    <img src="images/logo-footer.svg" alt="Company's logo" class="logo-footer">
+                </div>
+                <div class="subfooter-text">
+                    <p class="semi-bold ">Copyright &copy; 2020-2021</p>
+                    <p class="bold ">Zeus System Pvt. Ltd.</p>
+                    <p class="semi-bold">All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function hamburgerMenu() {
+          var x = document.getElementById("nav-menu");
+          if (x.className === "nav-menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-menu";
+          }
+        }
+    </script>
 </body>
