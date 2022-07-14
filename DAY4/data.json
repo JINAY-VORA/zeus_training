@@ -1,0 +1,38 @@
+[
+    {
+        "title":"Acceleration",
+        "subject":"Physics",
+        "grade": "7 +2",
+        "courseDetails":"4 Units 18 Lessons 24 Topics",
+        "teacher":"Mr Frank's Class B",
+        "noOfStudents":"50 Students",
+        "duration":"21-Jan-2020-21-Aug-2020"
+    },
+    {
+        "title":"Displacement, Velocity and Speed",
+        "subject":"Physics 2",
+        "grade": "6 +3",
+        "courseDetails":"2 Units 15 Lessons 20 Topics",
+        "teacher":"No Classes",
+        "noOfStudents":"",
+        "duration":""
+    },
+    {
+        "title":"Introduction to Biology:Micro organims and how they affec...",
+        "subject":"Mathematics",
+        "grade": "4 +1",
+        "courseDetails":"5 Units 16 Lessons 22 Topics",
+        "teacher":"All Classes",
+        "noOfStudents":"300 Students",
+        "duration":""
+    },
+    {
+        "title":"Introduction to High School Mathematics",
+        "subject":"Physics",
+        "grade": "8 +3",
+        "courseDetails":"4 Units 18 Lessons 24 Topics",
+        "teacher":"Mr Frank's Class A",
+        "noOfStudents":"44 Students",
+        "duration":"19-Oct-2019 - 20-Oct-2020"
+    }
+]

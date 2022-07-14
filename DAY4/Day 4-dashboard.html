@@ -6,30 +6,187 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style-dash.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </html>
+<style>
+    .content-dropdown{
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 56px;
+        right: 419px;
+        height: 56px;
+
+    }
+    .content-dropdown:hover{
+
+        background-color: #F3F3F3;
+    }
+    .content-dropdown>a:hover{
+        color: #3FD28B;
+        border-bottom:0;
+        height: 56px;
+        
+    }
+    .show{
+        display: block;
+    }
+</style>
 <body>
     <div class="container">
         <header>
             <img src="images/logo-header.svg" alt="Company's logo" class="header-logo">
-            <div class="nav-bar" >
-                <div class="nav-menu" id="nav-menu">
+            <div class="nav-bar"  >
+                <div class="nav-menu" id="nav-menu" onmouseenter="hamburgerMenu()" onmouseleave="hamburgerMenu()">
                     <a href="#" class="active">Dashboard</a>
-                    <a href="#">Content</a>
+                    <a href="javascript:contentDropdown();"  class="contentBtn" >Content</a>
+                    <div id="content-dropdown" class="content-dropdown">
+                        <a href="#">Course Catalog</a>
+                    </div>
                     <a href="#">Users</a>
                     <a href="#">Reports</a>
                     <a href="#">Admin</a>
-                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                        <img src="images/hamburger-menu.svg" alt="menu icon" class="hamburger-menu">
-                    </a>
                 </div>
+                <a href="javascript:void(0);" class="icon"  onmouseenter="hamburgerMenu()"onmouseleave="hamburgerMenu()">
+                    <img src="images/hamburger-menu.svg" alt="menu icon" class="hamburger-menu">
+                </a>
                 <div>
-                    <a href="#" class="nav-icons">
+                    <a href="#" class="nav-icons alert-dropdown">
                     <img src="images/alerts.svg" alt="bell icon">
                     <span class="badge">2</span>
+                    <div class="alert-content">
+                        <div class="alert-dropdown-space">
+                            <div class="alert-box">
+                                <div>
+                                    <p>License for introduction to Algebra has been assigned to your school</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                            <div class="alert-box">
+                                <div>
+                                    <p>Lesson 3 Practice Worksheet overdue for Amy Santiago</p>
+                                    <p>Course:Advanced Mathematics</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 05:21pm</p>
+                                </div>
+                            </div>
+                            <div class="alert-box">
+                                <div>
+                                    <p>23 new students created</p>
+                                </div>
+                                <div>
+                                    <p>14-Sep-2018 at 01:21pm</p>
+                                </div>
+                            </div>
+                            <div class="alert-box">
+                                <div>
+                                    <p>15 submissions ready for evaluation</p>
+                                    <p>Class:Basics of Algebra</p>
+                                </div>
+                                <div>
+                                    <p>13-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                            <div class="alert-box">
+                                <div>
+                                    <p>License for Basic Concepts in Geometry has been assigned to your...</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                            <div class="alert-box">
+                                <div>
+                                    <p>Lesson 3 Practice Worksheet overdue for Sam Diego</p>
+                                    <p>Course: Advanced Mathematics</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                            <div class="alert-box">
+                                <div>
+                                    <p>Lesson 3 Practice Worksheet overdue for Sam Diego</p>
+                                    <p>Course: Advanced Mathematics</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                      
+                        </div>
+                        <div class="alert-dropdown-btn">
+                            <button class="uppercase semi-bold"> Show All</button>
+                        </div>
+                    </div>
+
                 </a>
-                <a href="#" class="nav-icons">
+                <a href="#" class="nav-icons announce-dropdown">
                     <img src="images/announcements.svg" alt="speaker icon">
                     <span class="badge">1</span>
+                    <div class="announce-content">
+                        <div class="announce-dropdown-space">
+                            <div class="announce-box">
+                                <div>
+                                    <p>PA: <span class="semi-bold">Willson Kumar</span></p>
+                                    <p>No classes will be held on 21st Nov</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                    <p><i class="fa fa-paperclip" aria-hidden="true"></i>2 files are attached</p>
+                                </div>
+                            </div>
+                            <div class="announce-box">
+                                <div>
+                                    <p>PA: <span class="semi-bold"> Samson White</span></p>
+                                    <p>Guest lecture on Geometry on 20th September</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                    <p><i class="fa fa-paperclip" aria-hidden="true"></i>2 files are attached</p>
+                                </div>
+                            </div>
+                            <div class="announce-box">
+                                <div>
+                                    <p>PA: <span class="semi-bold"> Willson Kumar</span></p>
+                                    <p>Additional course materials available on request</p>
+                                    <p>Course : Mathematics 101</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                            <div class="announce-box">
+                                <div> 
+                                    <p>PA: <span class="semi-bold"> Willson Kumar</span></p>
+                                    <p>No classes will be held on 25th Dec</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+
+                                </div>
+                            </div>
+                            <div class="announce-box">
+                                <div>
+                                    <p>PA: <span class="semi-bold">Willson Kumar</span></p>
+                                    <p>Additional course materials available on request</p>
+                                    <p>Course : Mathematics 101</p>
+                                </div>
+                                <div>
+                                    <p>15-Sep-2018 at 07:21pm</p>
+                                </div>
+                            </div>
+                            
+                      
+                        </div>
+                        <div class="announce-dropdown-btn ">
+                            <button class="uppercase semi-bold"> Show All</button>
+                            <button class="uppercase semi-bold">Create new</button>
+                        </div>
+                    </div>
                 </a>
                 <a href="#" class="nav-icons">
                     <img src="images/profile.png" alt="Profile picture" class="profile">
@@ -229,13 +386,36 @@
         </footer>
     </div>
     <script>
-        function hamburgerMenu() {
-          var x = document.getElementById("nav-menu");
-          if (x.className === "nav-menu") {
-            x.className += " responsive";
-          } else {
-            x.className = "nav-menu";
-          }
-        }
+function hamburgerMenu() {
+    var x = document.getElementById("nav-menu");
+    if (x.className === "nav-menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-menu";
+    }
+  }
+  
+  function contentDropdown(){
+   
+  document.getElementById("content-dropdown").classList.toggle("show");
+
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.contentBtn')) {
+    var dropdowns = document.getElementsByClassName("content-dropdown");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  }
+  
+        
     </script>
+
 </body>
